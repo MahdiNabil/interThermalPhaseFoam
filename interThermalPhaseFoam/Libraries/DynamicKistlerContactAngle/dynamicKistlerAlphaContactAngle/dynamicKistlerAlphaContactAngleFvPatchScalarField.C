@@ -214,7 +214,7 @@ tmp<scalarField> dynamicKistlerAlphaContactAngleFvPatchScalarField::theta
         }
         else if (uwall[pfacei] > 0.0)
         {
-            thetaDp[pfacei] = HoffmanFunction(   Ca[pfacei]
+            thetaDp[pfacei] = HoffmanFunction(   -Ca[pfacei]
                                                + InvHoffFuncThetaRroot);
         }
     }
